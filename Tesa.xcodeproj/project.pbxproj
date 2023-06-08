@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A2B04852A2D30A900A49E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04842A2D30A900A49E13 /* AppDelegate.swift */; };
+		3A2B04872A2D30A900A49E13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04862A2D30A900A49E13 /* SceneDelegate.swift */; };
+		3A2B04892A2D30A900A49E13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04882A2D30A900A49E13 /* ViewController.swift */; };
+		3A2B04912A2D30AC00A49E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B04902A2D30AC00A49E13 /* Assets.xcassets */; };
+		3A2B04942A2D30AC00A49E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B04922A2D30AC00A49E13 /* LaunchScreen.storyboard */; };
+		3A2B049F2A2D30AD00A49E13 /* TesaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B049E2A2D30AD00A49E13 /* TesaTests.swift */; };
+		3A2B04AA2A2D30AD00A49E13 /* TesaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04A92A2D30AD00A49E13 /* TesaUITests.swift */; };
+		3A2B04BC2A2D31B200A49E13 /* Tesa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04BA2A2D31B200A49E13 /* Tesa.xcdatamodeld */; };
+		3A2B04D32A2D351A00A49E13 /* Expenditure+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04D22A2D351A00A49E13 /* Expenditure+CoreDataClass.swift */; };
+		3A2B04DB2A2D354C00A49E13 /* Expenditure+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04DA2A2D354C00A49E13 /* Expenditure+CoreDataProperties.swift */; };
+		3A2B04E22A2D382900A49E13 /* DataListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04E02A2D382900A49E13 /* DataListViewModel.swift */; };
+		3A2B04E32A2D382900A49E13 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04E12A2D382900A49E13 /* RootTabBarController.swift */; };
+		3A2B04EB2A2D3A9400A49E13 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04E82A2D3A9400A49E13 /* AnalysisViewController.swift */; };
+		3A2B04EC2A2D3A9400A49E13 /* GroupByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04E92A2D3A9400A49E13 /* GroupByView.swift */; };
+		3A2B04ED2A2D3A9400A49E13 /* ExpenseChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04EA2A2D3A9400A49E13 /* ExpenseChartView.swift */; };
+		3A2B04F62A2D3AA400A49E13 /* RecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04F22A2D3AA400A49E13 /* RecordDetailViewController.swift */; };
+		3A2B04F72A2D3AA400A49E13 /* ItemDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04F32A2D3AA400A49E13 /* ItemDetailCell.swift */; };
+		3A2B04F82A2D3AA400A49E13 /* DataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04F42A2D3AA400A49E13 /* DataListViewController.swift */; };
+		3A2B04F92A2D3AA400A49E13 /* DataListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04F52A2D3AA400A49E13 /* DataListTableViewCell.swift */; };
+		3A2B05012A2D3AB400A49E13 /* FrequencyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04FE2A2D3AB400A49E13 /* FrequencyTableCell.swift */; };
+		3A2B05022A2D3AB400A49E13 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B04FF2A2D3AB400A49E13 /* Frequency.swift */; };
+		3A2B05032A2D3AB400A49E13 /* FrequencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05002A2D3AB400A49E13 /* FrequencyViewController.swift */; };
+		3A2B050A2A2D3AD600A49E13 /* SettingsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05082A2D3AD500A49E13 /* SettingsTableCell.swift */; };
+		3A2B050B2A2D3AD600A49E13 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05092A2D3AD500A49E13 /* SettingsViewController.swift */; };
+		3A2B05162A2D3ADD00A49E13 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05102A2D3ADD00A49E13 /* Constants.swift */; };
+		3A2B05172A2D3ADD00A49E13 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05112A2D3ADD00A49E13 /* ObservableObject.swift */; };
+		3A2B05182A2D3ADD00A49E13 /* DatePlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05122A2D3ADD00A49E13 /* DatePlus.swift */; };
+		3A2B05192A2D3ADD00A49E13 /* UIColorPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05132A2D3ADD00A49E13 /* UIColorPlus.swift */; };
+		3A2B051A2A2D3ADD00A49E13 /* UIViewPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05142A2D3ADD00A49E13 /* UIViewPlus.swift */; };
+		3A2B051B2A2D3ADD00A49E13 /* UserDefaultsPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B05152A2D3ADD00A49E13 /* UserDefaultsPlus.swift */; };
+		7128F4725ADD5A10052DFD78 /* Pods_TesaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C1DE07652BC2886DFC8EFD /* Pods_TesaTests.framework */; };
+		9654782D8AC8989C0B006AE8 /* Pods_Tesa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80A88121E952431A991A197 /* Pods_Tesa.framework */; };
+		E0E0A114278ACC7ABFCC3024 /* Pods_Tesa_TesaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67A1DA2D6AB1EF7E79B2D3A /* Pods_Tesa_TesaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A2B049B2A2D30AD00A49E13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A2B04792A2D30A900A49E13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A2B04802A2D30A900A49E13;
+			remoteInfo = Tesa;
+		};
+		3A2B04A62A2D30AD00A49E13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A2B04792A2D30A900A49E13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A2B04802A2D30A900A49E13;
+			remoteInfo = Tesa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		135992D3D615D8BF1A9E040D /* Pods-Tesa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesa.release.xcconfig"; path = "Target Support Files/Pods-Tesa/Pods-Tesa.release.xcconfig"; sourceTree = "<group>"; };
+		19CE150A8DB4EF9CE96F4396 /* Pods-Tesa-TesaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesa-TesaUITests.release.xcconfig"; path = "Target Support Files/Pods-Tesa-TesaUITests/Pods-Tesa-TesaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3A2B04812A2D30A900A49E13 /* Tesa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2B04842A2D30A900A49E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A2B04862A2D30A900A49E13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A2B04882A2D30A900A49E13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A2B04902A2D30AC00A49E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A2B04932A2D30AC00A49E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A2B04952A2D30AC00A49E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2B049A2A2D30AD00A49E13 /* TesaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2B049E2A2D30AD00A49E13 /* TesaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesaTests.swift; sourceTree = "<group>"; };
+		3A2B04A02A2D30AD00A49E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2B04A52A2D30AD00A49E13 /* TesaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2B04A92A2D30AD00A49E13 /* TesaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesaUITests.swift; sourceTree = "<group>"; };
+		3A2B04AB2A2D30AD00A49E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2B04BB2A2D31B200A49E13 /* Tesa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tesa.xcdatamodel; sourceTree = "<group>"; };
+		3A2B04D22A2D351A00A49E13 /* Expenditure+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expenditure+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3A2B04DA2A2D354C00A49E13 /* Expenditure+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expenditure+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3A2B04E02A2D382900A49E13 /* DataListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListViewModel.swift; sourceTree = "<group>"; };
+		3A2B04E12A2D382900A49E13 /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		3A2B04E82A2D3A9400A49E13 /* AnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		3A2B04E92A2D3A9400A49E13 /* GroupByView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupByView.swift; sourceTree = "<group>"; };
+		3A2B04EA2A2D3A9400A49E13 /* ExpenseChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseChartView.swift; sourceTree = "<group>"; };
+		3A2B04F22A2D3AA400A49E13 /* RecordDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDetailViewController.swift; sourceTree = "<group>"; };
+		3A2B04F32A2D3AA400A49E13 /* ItemDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailCell.swift; sourceTree = "<group>"; };
+		3A2B04F42A2D3AA400A49E13 /* DataListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListViewController.swift; sourceTree = "<group>"; };
+		3A2B04F52A2D3AA400A49E13 /* DataListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListTableViewCell.swift; sourceTree = "<group>"; };
+		3A2B04FE2A2D3AB400A49E13 /* FrequencyTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyTableCell.swift; sourceTree = "<group>"; };
+		3A2B04FF2A2D3AB400A49E13 /* Frequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		3A2B05002A2D3AB400A49E13 /* FrequencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyViewController.swift; sourceTree = "<group>"; };
+		3A2B05082A2D3AD500A49E13 /* SettingsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableCell.swift; sourceTree = "<group>"; };
+		3A2B05092A2D3AD500A49E13 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3A2B05102A2D3ADD00A49E13 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3A2B05112A2D3ADD00A49E13 /* ObservableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		3A2B05122A2D3ADD00A49E13 /* DatePlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePlus.swift; sourceTree = "<group>"; };
+		3A2B05132A2D3ADD00A49E13 /* UIColorPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorPlus.swift; sourceTree = "<group>"; };
+		3A2B05142A2D3ADD00A49E13 /* UIViewPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewPlus.swift; sourceTree = "<group>"; };
+		3A2B05152A2D3ADD00A49E13 /* UserDefaultsPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsPlus.swift; sourceTree = "<group>"; };
+		56118ED464E1A14262490387 /* Pods-TesaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesaTests.debug.xcconfig"; path = "Target Support Files/Pods-TesaTests/Pods-TesaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B17673C7EC00FC8F196F3BC4 /* Pods-TesaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesaTests.release.xcconfig"; path = "Target Support Files/Pods-TesaTests/Pods-TesaTests.release.xcconfig"; sourceTree = "<group>"; };
+		C37A8DB523EF4F93334A7A97 /* Pods-Tesa-TesaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesa-TesaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tesa-TesaUITests/Pods-Tesa-TesaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4C1DE07652BC2886DFC8EFD /* Pods_TesaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E30E352EE6A0C0640B52AE71 /* Pods-Tesa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesa.debug.xcconfig"; path = "Target Support Files/Pods-Tesa/Pods-Tesa.debug.xcconfig"; sourceTree = "<group>"; };
+		E67A1DA2D6AB1EF7E79B2D3A /* Pods_Tesa_TesaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesa_TesaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80A88121E952431A991A197 /* Pods_Tesa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A2B047E2A2D30A900A49E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9654782D8AC8989C0B006AE8 /* Pods_Tesa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A2B04972A2D30AD00A49E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7128F4725ADD5A10052DFD78 /* Pods_TesaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A2B04A22A2D30AD00A49E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E0A114278ACC7ABFCC3024 /* Pods_Tesa_TesaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18BC1484E10A529F22463074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80A88121E952431A991A197 /* Pods_Tesa.framework */,
+				E67A1DA2D6AB1EF7E79B2D3A /* Pods_Tesa_TesaUITests.framework */,
+				C4C1DE07652BC2886DFC8EFD /* Pods_TesaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A2B04782A2D30A900A49E13 = {
+			isa = PBXGroup;
+			children = (
+				3A2B04832A2D30A900A49E13 /* Tesa */,
+				3A2B049D2A2D30AD00A49E13 /* TesaTests */,
+				3A2B04A82A2D30AD00A49E13 /* TesaUITests */,
+				3A2B04822A2D30A900A49E13 /* Products */,
+				E8AB585A46656C582647FFD4 /* Pods */,
+				18BC1484E10A529F22463074 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A2B04822A2D30A900A49E13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B04812A2D30A900A49E13 /* Tesa.app */,
+				3A2B049A2A2D30AD00A49E13 /* TesaTests.xctest */,
+				3A2B04A52A2D30AD00A49E13 /* TesaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A2B04832A2D30A900A49E13 /* Tesa */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B04D12A2D34F900A49E13 /* CoreData */,
+				3A2B04DF2A2D382900A49E13 /* Root */,
+				3A2B04F12A2D3AA400A49E13 /* DataListView */,
+				3A2B04E72A2D3A9400A49E13 /* AnalysisView */,
+				3A2B04FD2A2D3AB400A49E13 /* FrequencyUtility */,
+				3A2B05072A2D3AD500A49E13 /* SettingsView */,
+				3A2B050F2A2D3ADD00A49E13 /* Utility */,
+				3A2B04842A2D30A900A49E13 /* AppDelegate.swift */,
+				3A2B04862A2D30A900A49E13 /* SceneDelegate.swift */,
+				3A2B04882A2D30A900A49E13 /* ViewController.swift */,
+				3A2B04902A2D30AC00A49E13 /* Assets.xcassets */,
+				3A2B04922A2D30AC00A49E13 /* LaunchScreen.storyboard */,
+				3A2B04952A2D30AC00A49E13 /* Info.plist */,
+				3A2B04BA2A2D31B200A49E13 /* Tesa.xcdatamodeld */,
+			);
+			path = Tesa;
+			sourceTree = "<group>";
+		};
+		3A2B049D2A2D30AD00A49E13 /* TesaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B049E2A2D30AD00A49E13 /* TesaTests.swift */,
+				3A2B04A02A2D30AD00A49E13 /* Info.plist */,
+			);
+			path = TesaTests;
+			sourceTree = "<group>";
+		};
+		3A2B04A82A2D30AD00A49E13 /* TesaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B04A92A2D30AD00A49E13 /* TesaUITests.swift */,
+				3A2B04AB2A2D30AD00A49E13 /* Info.plist */,
+			);
+			path = TesaUITests;
+			sourceTree = "<group>";
+		};
+		3A2B04D12A2D34F900A49E13 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B04D22A2D351A00A49E13 /* Expenditure+CoreDataClass.swift */,
+				3A2B04DA2A2D354C00A49E13 /* Expenditure+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3A2B04DF2A2D382900A49E13 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B04E02A2D382900A49E13 /* DataListViewModel.swift */,
+				3A2B04E12A2D382900A49E13 /* RootTabBarController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		3A2B04E72A2D3A9400A49E13 /* AnalysisView */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B04E82A2D3A9400A49E13 /* AnalysisViewController.swift */,
+				3A2B04E92A2D3A9400A49E13 /* GroupByView.swift */,
+				3A2B04EA2A2D3A9400A49E13 /* ExpenseChartView.swift */,
+			);
+			path = AnalysisView;
+			sourceTree = "<group>";
+		};
+		3A2B04F12A2D3AA400A49E13 /* DataListView */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B04F22A2D3AA400A49E13 /* RecordDetailViewController.swift */,
+				3A2B04F32A2D3AA400A49E13 /* ItemDetailCell.swift */,
+				3A2B04F42A2D3AA400A49E13 /* DataListViewController.swift */,
+				3A2B04F52A2D3AA400A49E13 /* DataListTableViewCell.swift */,
+			);
+			path = DataListView;
+			sourceTree = "<group>";
+		};
+		3A2B04FD2A2D3AB400A49E13 /* FrequencyUtility */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B04FE2A2D3AB400A49E13 /* FrequencyTableCell.swift */,
+				3A2B04FF2A2D3AB400A49E13 /* Frequency.swift */,
+				3A2B05002A2D3AB400A49E13 /* FrequencyViewController.swift */,
+			);
+			path = FrequencyUtility;
+			sourceTree = "<group>";
+		};
+		3A2B05072A2D3AD500A49E13 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B05082A2D3AD500A49E13 /* SettingsTableCell.swift */,
+				3A2B05092A2D3AD500A49E13 /* SettingsViewController.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		3A2B050F2A2D3ADD00A49E13 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B05102A2D3ADD00A49E13 /* Constants.swift */,
+				3A2B05112A2D3ADD00A49E13 /* ObservableObject.swift */,
+				3A2B05122A2D3ADD00A49E13 /* DatePlus.swift */,
+				3A2B05132A2D3ADD00A49E13 /* UIColorPlus.swift */,
+				3A2B05142A2D3ADD00A49E13 /* UIViewPlus.swift */,
+				3A2B05152A2D3ADD00A49E13 /* UserDefaultsPlus.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E8AB585A46656C582647FFD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E30E352EE6A0C0640B52AE71 /* Pods-Tesa.debug.xcconfig */,
+				135992D3D615D8BF1A9E040D /* Pods-Tesa.release.xcconfig */,
+				C37A8DB523EF4F93334A7A97 /* Pods-Tesa-TesaUITests.debug.xcconfig */,
+				19CE150A8DB4EF9CE96F4396 /* Pods-Tesa-TesaUITests.release.xcconfig */,
+				56118ED464E1A14262490387 /* Pods-TesaTests.debug.xcconfig */,
+				B17673C7EC00FC8F196F3BC4 /* Pods-TesaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A2B04802A2D30A900A49E13 /* Tesa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2B04AE2A2D30AD00A49E13 /* Build configuration list for PBXNativeTarget "Tesa" */;
+			buildPhases = (
+				A4B36FC21F977A1D98DAC838 /* [CP] Check Pods Manifest.lock */,
+				3A2B047D2A2D30A900A49E13 /* Sources */,
+				3A2B047E2A2D30A900A49E13 /* Frameworks */,
+				3A2B047F2A2D30A900A49E13 /* Resources */,
+				51B703C4B14B0A694C86D520 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tesa;
+			productName = Tesa;
+			productReference = 3A2B04812A2D30A900A49E13 /* Tesa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A2B04992A2D30AD00A49E13 /* TesaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2B04B12A2D30AD00A49E13 /* Build configuration list for PBXNativeTarget "TesaTests" */;
+			buildPhases = (
+				7E3923221A476AA0331C067F /* [CP] Check Pods Manifest.lock */,
+				3A2B04962A2D30AD00A49E13 /* Sources */,
+				3A2B04972A2D30AD00A49E13 /* Frameworks */,
+				3A2B04982A2D30AD00A49E13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A2B049C2A2D30AD00A49E13 /* PBXTargetDependency */,
+			);
+			name = TesaTests;
+			productName = TesaTests;
+			productReference = 3A2B049A2A2D30AD00A49E13 /* TesaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A2B04A42A2D30AD00A49E13 /* TesaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2B04B42A2D30AD00A49E13 /* Build configuration list for PBXNativeTarget "TesaUITests" */;
+			buildPhases = (
+				6E2B79E96D9DA9839501CD52 /* [CP] Check Pods Manifest.lock */,
+				3A2B04A12A2D30AD00A49E13 /* Sources */,
+				3A2B04A22A2D30AD00A49E13 /* Frameworks */,
+				3A2B04A32A2D30AD00A49E13 /* Resources */,
+				D8420A12BC6FDF72A7B9414B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A2B04A72A2D30AD00A49E13 /* PBXTargetDependency */,
+			);
+			name = TesaUITests;
+			productName = TesaUITests;
+			productReference = 3A2B04A52A2D30AD00A49E13 /* TesaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A2B04792A2D30A900A49E13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					3A2B04802A2D30A900A49E13 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					3A2B04992A2D30AD00A49E13 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3A2B04802A2D30A900A49E13;
+					};
+					3A2B04A42A2D30AD00A49E13 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3A2B04802A2D30A900A49E13;
+					};
+				};
+			};
+			buildConfigurationList = 3A2B047C2A2D30A900A49E13 /* Build configuration list for PBXProject "Tesa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A2B04782A2D30A900A49E13;
+			productRefGroup = 3A2B04822A2D30A900A49E13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A2B04802A2D30A900A49E13 /* Tesa */,
+				3A2B04992A2D30AD00A49E13 /* TesaTests */,
+				3A2B04A42A2D30AD00A49E13 /* TesaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A2B047F2A2D30A900A49E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2B04942A2D30AC00A49E13 /* LaunchScreen.storyboard in Resources */,
+				3A2B04912A2D30AC00A49E13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A2B04982A2D30AD00A49E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A2B04A32A2D30AD00A49E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51B703C4B14B0A694C86D520 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tesa/Pods-Tesa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tesa/Pods-Tesa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tesa/Pods-Tesa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E2B79E96D9DA9839501CD52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tesa-TesaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E3923221A476AA0331C067F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TesaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B36FC21F977A1D98DAC838 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tesa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8420A12BC6FDF72A7B9414B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tesa-TesaUITests/Pods-Tesa-TesaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tesa-TesaUITests/Pods-Tesa-TesaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tesa-TesaUITests/Pods-Tesa-TesaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A2B047D2A2D30A900A49E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2B04F82A2D3AA400A49E13 /* DataListViewController.swift in Sources */,
+				3A2B04F62A2D3AA400A49E13 /* RecordDetailViewController.swift in Sources */,
+				3A2B051B2A2D3ADD00A49E13 /* UserDefaultsPlus.swift in Sources */,
+				3A2B04892A2D30A900A49E13 /* ViewController.swift in Sources */,
+				3A2B050B2A2D3AD600A49E13 /* SettingsViewController.swift in Sources */,
+				3A2B051A2A2D3ADD00A49E13 /* UIViewPlus.swift in Sources */,
+				3A2B05182A2D3ADD00A49E13 /* DatePlus.swift in Sources */,
+				3A2B04E32A2D382900A49E13 /* RootTabBarController.swift in Sources */,
+				3A2B05022A2D3AB400A49E13 /* Frequency.swift in Sources */,
+				3A2B050A2A2D3AD600A49E13 /* SettingsTableCell.swift in Sources */,
+				3A2B04852A2D30A900A49E13 /* AppDelegate.swift in Sources */,
+				3A2B04F72A2D3AA400A49E13 /* ItemDetailCell.swift in Sources */,
+				3A2B04F92A2D3AA400A49E13 /* DataListTableViewCell.swift in Sources */,
+				3A2B04EC2A2D3A9400A49E13 /* GroupByView.swift in Sources */,
+				3A2B05162A2D3ADD00A49E13 /* Constants.swift in Sources */,
+				3A2B05192A2D3ADD00A49E13 /* UIColorPlus.swift in Sources */,
+				3A2B04D32A2D351A00A49E13 /* Expenditure+CoreDataClass.swift in Sources */,
+				3A2B04DB2A2D354C00A49E13 /* Expenditure+CoreDataProperties.swift in Sources */,
+				3A2B04EB2A2D3A9400A49E13 /* AnalysisViewController.swift in Sources */,
+				3A2B05172A2D3ADD00A49E13 /* ObservableObject.swift in Sources */,
+				3A2B04872A2D30A900A49E13 /* SceneDelegate.swift in Sources */,
+				3A2B04E22A2D382900A49E13 /* DataListViewModel.swift in Sources */,
+				3A2B05012A2D3AB400A49E13 /* FrequencyTableCell.swift in Sources */,
+				3A2B05032A2D3AB400A49E13 /* FrequencyViewController.swift in Sources */,
+				3A2B04BC2A2D31B200A49E13 /* Tesa.xcdatamodeld in Sources */,
+				3A2B04ED2A2D3A9400A49E13 /* ExpenseChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A2B04962A2D30AD00A49E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2B049F2A2D30AD00A49E13 /* TesaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A2B04A12A2D30AD00A49E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2B04AA2A2D30AD00A49E13 /* TesaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A2B049C2A2D30AD00A49E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A2B04802A2D30A900A49E13 /* Tesa */;
+			targetProxy = 3A2B049B2A2D30AD00A49E13 /* PBXContainerItemProxy */;
+		};
+		3A2B04A72A2D30AD00A49E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A2B04802A2D30A900A49E13 /* Tesa */;
+			targetProxy = 3A2B04A62A2D30AD00A49E13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A2B04922A2D30AC00A49E13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A2B04932A2D30AC00A49E13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A2B04AC2A2D30AD00A49E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A2B04AD2A2D30AD00A49E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A2B04AF2A2D30AD00A49E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30E352EE6A0C0640B52AE71 /* Pods-Tesa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tesa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Tesa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A2B04B02A2D30AD00A49E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135992D3D615D8BF1A9E040D /* Pods-Tesa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tesa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Tesa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A2B04B22A2D30AD00A49E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56118ED464E1A14262490387 /* Pods-TesaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TesaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tesa.app/Tesa";
+			};
+			name = Debug;
+		};
+		3A2B04B32A2D30AD00A49E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B17673C7EC00FC8F196F3BC4 /* Pods-TesaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TesaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tesa.app/Tesa";
+			};
+			name = Release;
+		};
+		3A2B04B52A2D30AD00A49E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37A8DB523EF4F93334A7A97 /* Pods-Tesa-TesaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TesaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tesa;
+			};
+			name = Debug;
+		};
+		3A2B04B62A2D30AD00A49E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CE150A8DB4EF9CE96F4396 /* Pods-Tesa-TesaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TesaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TesaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tesa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A2B047C2A2D30A900A49E13 /* Build configuration list for PBXProject "Tesa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2B04AC2A2D30AD00A49E13 /* Debug */,
+				3A2B04AD2A2D30AD00A49E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A2B04AE2A2D30AD00A49E13 /* Build configuration list for PBXNativeTarget "Tesa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2B04AF2A2D30AD00A49E13 /* Debug */,
+				3A2B04B02A2D30AD00A49E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A2B04B12A2D30AD00A49E13 /* Build configuration list for PBXNativeTarget "TesaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2B04B22A2D30AD00A49E13 /* Debug */,
+				3A2B04B32A2D30AD00A49E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A2B04B42A2D30AD00A49E13 /* Build configuration list for PBXNativeTarget "TesaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2B04B52A2D30AD00A49E13 /* Debug */,
+				3A2B04B62A2D30AD00A49E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A2B04BA2A2D31B200A49E13 /* Tesa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A2B04BB2A2D31B200A49E13 /* Tesa.xcdatamodel */,
+			);
+			currentVersion = 3A2B04BB2A2D31B200A49E13 /* Tesa.xcdatamodel */;
+			name = Tesa.xcdatamodeld;
+			path = ../../../../../../Desktop/Tesa/Tesa/Tesa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A2B04792A2D30A900A49E13 /* Project object */;
+}
